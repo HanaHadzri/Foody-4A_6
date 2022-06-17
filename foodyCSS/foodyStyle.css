@@ -1,0 +1,264 @@
+body {
+    margin:0;
+    font-family: 'Concert One', cursive; /*font*/
+    color: #594129;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #594129;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #F06F32;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ffb999;
+    color: #594129;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .navbar a.split {
+    float: right;
+    background-color: #A44444;
+    color: white;
+    padding: 20px 35px;
+  }
+
+  .navbar a.split:hover {
+    background: #fc8c8c;
+    color: #594129;
+  }
+
+  .navbar a.barCenter {
+    float:none;
+  }
+
+
+  .loginContainer{
+    padding: 16px;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  table,th,td{
+    padding: 15px;
+    text-align: center;
+    background-color: #B5EDBA;
+    border-radius: 15px;
+    /*border: 1px solid;*/
+  }
+
+  .showPass{
+    padding: 2px 15px;
+    text-align: left;
+  }
+  
+  input[type="checkbox"]{
+    cursor: pointer;
+    accent-color: #A44444;
+  }
+
+  .textbox{
+    width: 100%;
+    padding: 10px 3px;
+    border-radius: 5px;
+    border-style: groove;
+    border: none;
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+  }
+
+  .pillBtn{
+    background-color: #F06F32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'Concert One', cursive; /*font*/
+    font-size: 18px;
+  }
+  
+
+  .pillBtn:hover{
+    background: #ffb999;
+    color: #594129;
+  }
+
+  .radiobtn{
+    cursor: pointer;
+	accent-color: #A44444;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    /*top: 0;*/
+    left: 0;
+    background-color: #B5EDBA;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #F06F32;
+    background-color: white;
+    border-radius: 16px;
+  }
+  
+  .sidenav a.active {
+    color:#594129;
+    background-color: white;
+  }
+  
+  .mainContent {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 18px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: #B5EDBA;
+    color: #594129;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'Concert One', cursive; /*font*/
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: white;
+    color: #F06F32;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: white;
+    color: #F06F32;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display:none;
+    padding: 6px 12px;
+  }
+
+  #GInput, #AInput, #OInput, #RInput {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    padding-block: 10px;
+    font-family: 'Concert One', cursive; /*font*/
+  }
+  
+  #GTable, #ATable, #OTable, #RTable{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+  }
+  
+  #GTable th, #ATable th, #RTable th, #OTable th{
+    text-align: center;
+  }
+
+  #GTable td, #ATable td, #RTable td, #OTable td {
+    text-align: left;
+    background-color: white;
+    border: none;
+  }
+
+  #GTable td.userID, #ATable td.userID, #RTable td.userID, #OTable td.userID{
+    text-align: center;
+  }
+
+  #GTable td.userName, #ATable td.userName, #RTable td.userName, #OTable td.userName{
+    width:50%;
+  }
+
+  #GTable td.userAction, #ATable td.userAction, #RTable td.userAction, #OTable td.userAction{
+    text-align: center;
+  }
+
+
+  .pillBtn2{
+    background-color: #F06F32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'Concert One', cursive; /*font*/
+    font-size: 16px;
+  }
+
+  .pillBtn2:hover{
+    background: #ffb999;
+    color: #594129;
+  }
+
+  
